@@ -1,0 +1,148 @@
+/* ================================
+   GLOBAL STYLES
+================================ */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h5 {
+  font-weight: 700;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar img {
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+#home {
+  background: linear-gradient(
+    rgba(13, 110, 253, 0.9),
+    rgba(13, 110, 253, 0.9)
+  ),
+  url("bank.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+#home h1 {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+#home p {
+  font-size: 1.2rem;
+}
+
+/* ================================
+   ABOUT SECTION
+================================ */
+#about {
+  background-color: #ffffff;
+}
+
+#about p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ================================
+   SERVICES SECTION
+================================ */
+#services i {
+  transition: transform 0.3s ease;
+}
+
+#services .col-md-4:hover i {
+  transform: scale(1.2);
+}
+
+/* ================================
+   CONTACT SECTION
+================================ */
+#contact {
+  background: #ffffff;
+}
+
+#contact form {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================
+   LOGIN SECTION
+================================ */
+#login form {
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+#login input {
+  height: 45px;
+}
+
+#login button {
+  height: 45px;
+  font-weight: bold;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  font-size: 0.95rem;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================
+   RESPONSIVE FIXES
+================================ */
+@media (max-width: 768px) {
+  #home {
+    min-height: 60vh;
+    text-align: center;
+  }
+}
+  .navbar img {
+    display: none;
+  }
+    

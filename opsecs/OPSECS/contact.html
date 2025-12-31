@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Contact Us</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <p><i class="fas fa-map-marker-alt me-2"></i>Bamenda, Cameroon</p>
+        <p><i class="fas fa-phone me-2"></i>(+237) 233 736 614</p>
+        <p><i class="fas fa-envelope me-2"></i>opsecsho@opsecsltd.com</p>
+      </div>
+
+      <div class="col-md-6">
+        <form method="POST" action="Backend/contact.php" class="card p-4 shadow">
+
+          <div class="mb-3">
+            <label>Your Name</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label>Message</label>
+            <textarea name="message" class="form-control" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</head>
+<body>
+    
+</body>
+</html>

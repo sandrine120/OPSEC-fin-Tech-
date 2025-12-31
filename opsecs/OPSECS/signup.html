@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f5f7fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #333;
+    }
+
+    .container {
+        text-align: center;
+        width: 100%;
+        max-width: 380px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 5px;
+        color: #000;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        color: #555;
+        margin-bottom: 25px;
+    }
+
+    .form-box {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        text-align: left;
+    }
+
+    .form-box h2 {
+        margin-top: 0;
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #222;
+    }
+
+    label {
+        font-size: 14px;
+        color: #444;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 6px 0 15px 0;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    .extras {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .extras a {
+        text-decoration: none;
+        color: #4a90e2;
+    }
+
+    .btn {
+        width: 100%;
+        background: #4ac6ff;
+        border: none;
+        padding: 12px;
+        font-size: 15px;
+        color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: opacity .2s;
+    }
+
+    .btn:hover {
+        opacity: 0.9;
+    }
+
+    .signup-text {
+        margin-top: 15px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .signup-text a {
+        color: #4a90e2;
+        text-decoration: none;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to OPSEC</h1>
+    <div class="subtitle">Secure banking for your financial future</div>
+
+    <div class="form-box">
+        <h2>Sign In</h2>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="your.email@example.com">
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password">
+
+        <div class="extras">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot password?</a>
+        </div>
+
+        <button class="btn">Sign In</button>
+
+        <div class="signup-text">
+            Don’t have an account? <a href="#">Create Account</a>
+        </div>
+    </div>
+</div>
+<form action="Backend/login.php" method="post">
+    <input type="text" name="fullname" required>
+    <input type="email" name="email" required>
+    <input type="text" name="Phone" required>
+    <input type="password" name="password" required>
+    <input type="password" name="Confirm password" required>
+    <button type="submit">Create Account</button>
+    <a href="signup.php">signup</a>
+</form>
+</body>
+</html>
